@@ -1,0 +1,287 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    color: #f5f5f7;
+    align-items: center;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #1E1E1E;
+        background: linear-gradient(180deg, rgba(26, 26, 26, 0.767) 0%, rgba(0, 0, 0, 0.384) 80%, rgba(0,0,0,0) 100%);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #f5f5f7e1;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.navbar a {
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background: linear-gradient(180deg, #333333 2%, rgba(0, 0, 0, 0));
+    color: #FFFFFF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 2px auto;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+      opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  
+}
+
+.block {
+
+    display: block;
+    max-width: 800px;
+    padding: 0px 0px 0px 0px;
+    margin: 20px;
+}
+
+h1 {
+
+    text-decoration: none;
+    color: #f5f5f7;
+    font-family: "Geist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+p {
+
+    text-decoration: none;
+    color: #f5f5f7da;
+    font-family: "Geist", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+
+}
+
+li {
+
+    text-decoration: none;
+    color: #f5f5f7da;
+    font-family: "Geist", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+
+}
+
+h2 {
+
+
+    text-decoration: none;
+    color: #f5f5f7;
+    font-family: "Geist", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 27.5px;
+    margin: 0px 0px 0px 2px;
+
+}
+
+#skills, #portfolio {
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+    scroll-snap-align: start;
+
+}
+
+
+.timeline {
+    position: relative;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid #ddd;
+    top: 0px;
+}
+
+.timeline-item h2 {
+    margin-top: -2px;
+}
+
+.timeline-item .dot {
+    position: relative;
+    margin: -25px;
+    top: 0px;
+    padding-left: 1rem;
+    padding-top: 0rem;
+    background: #f5f5f7;
+    border-radius: 50%;
+}
+
+#portfolio {
+padding: 0px 0px 50px 0px;
+}
+
+.portfolio-block {
+    display: flex;
+    flex-direction: row;
+}
+
+#portfolio-img {
+    margin: 15px;
+}
+
+hr {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+#kaban {
+    display: flex;
+
+    justify-content: right;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 0px;
+}
+
+
+#link {
+    list-style: none;
+    height: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#linkimg {
+    list-style: none;
+    height: 40px;
+    padding: 2px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 20px;
+
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 17px;
+    }
+
+    .block {
+        margin: 10px 0;
+        padding-top: 20px;
+    }
+
+    .contact p {
+        font-size: 18px;
+    }
+
+    .contact a {
+        font-size: 18px;
+    }
+
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
