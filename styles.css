@@ -232,7 +232,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     h1 {
         font-size: 24px;
     }
@@ -249,10 +249,6 @@ footer {
         font-size: 17px;
     }
 
-    .block {
-        margin: 10px 0;
-        padding-top: 20px;
-    }
 
     .contact p {
         font-size: 18px;
