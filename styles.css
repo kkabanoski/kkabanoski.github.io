@@ -169,10 +169,20 @@ padding: 0px 0px 50px 0px;
 .portfolio-block {
     display: flex;
     flex-direction: row;
+    max-width: 100%;
+
+}
+
+.portfolio-a {
+    display: flex;
+    flex-direction: row;
+    max-width: 50%;
+
 }
 
 #portfolio-img {
     margin: 15px;
+    max-width: 100%;
 }
 
 hr {
